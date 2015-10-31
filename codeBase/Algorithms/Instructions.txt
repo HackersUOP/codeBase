@@ -1,9 +1,9 @@
-Use this for ieeextream solutions
+For algorithms
 
 Make sure,
 1. they are 100% correct and working
 2. Properly documented. (comments)
-3. File names as problem_language.extensoin
+3. File names as algoName_language.extensoin
 
-Cheers
+cheers
 Hackers' Club
