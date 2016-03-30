@@ -37,6 +37,7 @@ ll ncr(ll n,ll r){
  	else{
  		ll val=ncr(n-1,r)+ncr(n-1,r-1);
  		mp[make_pair(n,r)]=val;
+ 		return val;
  	} 
 }
 
