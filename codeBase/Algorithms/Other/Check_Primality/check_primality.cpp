@@ -11,28 +11,20 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-#include <stdio.h>
-#include <iostream>
-#include <cstring>
-#include <climits>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <cmath>
-using namespace std;
+#include<bits/stdc++.h>
 typedef long long ll;
+using namespace std;
+bool isPrime(ll p)
+{
+    if (p < 2) return false;
+    for (ll i = 2; i * i <= p; i++)
+        if (p % i == 0)
+            return false;
+    return true;
+}
 int main() {
-    ios_base::sync_with_stdio(false);
-    int t;
-    cin >> t;
-    for (int i = 0; i < t; i++) {
-        ll n, k;
-        cin >> n >> k;
-        string s;
-        ll n2 = (ll)pow(2.0f, (double)n);
-        if ((k + 1) % n2 == 0) s = "ON";
-        else s = "OFF";
-        printf("Case #%d: %s\n", i + 1, s.c_str());
-    }
-    return 0;
+    ll n;
+    scanf("%lld", &n);
+    if (isPrime(n)) printf("%lld is a prime!\n", n);
+    else printf("%lld is not a prime!\n", n);
 }

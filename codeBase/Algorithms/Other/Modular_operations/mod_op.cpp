@@ -11,28 +11,27 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-#include <stdio.h>
-#include <iostream>
-#include <cstring>
-#include <climits>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <cmath>
+#include<bits/stdc++.h>
+#define MOD 1000000007
 using namespace std;
 typedef long long ll;
+typedef pair<ll, ll> pr;
+map<pr, ll> mp;
+ll mult(ll a, ll b) {
+    return (a * b) % MOD;
+}
+ll power(ll a, ll b) {
+    ll ret = 1L;
+    for (ll k = 0; k < b; k++) ret = mult(ret, a);
+    return ret;
+}
+ll add(ll a, ll b) {
+    return (a + b) % MOD;
+}
 int main() {
     ios_base::sync_with_stdio(false);
     int t;
     cin >> t;
     for (int i = 0; i < t; i++) {
-        ll n, k;
-        cin >> n >> k;
-        string s;
-        ll n2 = (ll)pow(2.0f, (double)n);
-        if ((k + 1) % n2 == 0) s = "ON";
-        else s = "OFF";
-        printf("Case #%d: %s\n", i + 1, s.c_str());
     }
-    return 0;
 }

@@ -11,28 +11,28 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-#include <stdio.h>
-#include <iostream>
-#include <cstring>
-#include <climits>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <cmath>
-using namespace std;
+#include<bits/stdc++.h>
 typedef long long ll;
-int main() {
-    ios_base::sync_with_stdio(false);
-    int t;
-    cin >> t;
-    for (int i = 0; i < t; i++) {
-        ll n, k;
-        cin >> n >> k;
-        string s;
-        ll n2 = (ll)pow(2.0f, (double)n);
-        if ((k + 1) % n2 == 0) s = "ON";
-        else s = "OFF";
-        printf("Case #%d: %s\n", i + 1, s.c_str());
+using namespace std;
+void findPrimeFactors(ll n) {
+    ll d = 2;
+    while (n > 1) {
+        while (n % d == 0L) {
+            printf("%lld ", d);
+            n /= d;
+        }
+        d = d + 1L;
+        if (d * d > n) {
+            if (n > 1L) {
+                printf("%lld ", n);
+            }
+            break;
+        }
     }
-    return 0;
+    printf("\n");
+}
+int main() {
+    ll n;
+    scanf("%lld", &n);
+    findPrimeFactors(n);
 }
