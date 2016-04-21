@@ -1,0 +1,51 @@
+.pascal {
+     margin-left:auto;
+     margin-right:auto;
+     border-width:2px;
+     border-style:outset;
+     border-color:gray;
+   }
+.pascal td {
+   padding:2px 15px 2px 15px;
+   text-align:center;
+   border-width:1px;
+   border-style:outset;
+   border-color:gray  
+}
+.pascal th {
+   padding:2px 15px 2px 15px;
+   text-align:center;
+   border-width:1px;
+   border-style:outset;
+   border-color:gray;
+   background-color:#bbb;
+}
+.jxgbox{
+   border:none;
+}  
+
+table.latinsquare  {
+border-collapse:collapse;
+border:1px solid;
+}
+
+table.latinsquare td {
+border:1px solid;
+}
+
+table.numerical {
+border-spacing: 10px 5px;
+border-collapse:collapse;
+border:1px solid;
+}
+
+table.numerical th {
+text-align:center;
+border:1px solid;
+}
+
+table.numerical td {
+text-align:right;
+border:1px solid;
+}
+

@@ -1,9 +1,0 @@
-Use this for ieeextream solutions
-
-Make sure,
-1. they are 100% correct and working
-2. Properly documented. (comments)
-3. File names as problem_language.extensoin
-
-Cheers
-Hackers' Club
