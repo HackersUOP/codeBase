@@ -27,22 +27,22 @@ https://www.facebook.com/hackercup/problem/582396081891255/ (must be logged in t
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-void sieveOfEratosthenes(ll n) {
-    bool prime[n + 1];
-    memset(prime, true, sizeof(prime));
-    for (ll p = 2; p <= n; p++) {
-        if (prime[p] == true) {
-            printf("%lld ", p);
-            for (ll i = p * 2; i <= n; i += p) {
+void sieveOfEratosthenes(int n) {
+    vector<bool> prime(n + 1);
+    for(int i=0;i<=n;i++) prime[i]=true;
+    for (int p = 2; p*p <= n; p++) {
+        if (prime[p]) {
+            for (int i = p * p; i <= n; i += p) {
                 prime[i] = false;
             }
         }
     }
-    printf("\n");
+    for (int p=2; p<=n; p++)
+       if (prime[p])
+          cout << p << " ";
 }
 int main() {
-    ll n;
-    scanf("%lld", &n);
+    int n=1000000;
     sieveOfEratosthenes(n);
     return 0;
 }
