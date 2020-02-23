@@ -1,39 +1,37 @@
-from heapq import heappop, heappush
-from collections import defaultdict
+'''
+NOTE:
+Due to the large queue size, the unoptimized solution is comparatively slower (Only in interpreted languages like python).
+Thus multiple queues are used, one for each bit mask value.
+'''
 
-n, m, k = map(int, raw_input().split())
-
-masks = [0] * (n+1)
-graph = defaultdict(list)
-dp = [[float('inf')]*(2**k+2) for i in xrange(n+1)]
-
-for i in xrange(1, n+1):
-    ar = map(int, raw_input().split())
-    for t in xrange(1, len(ar)):
-        masks[i] |= 2**(ar[t]-1)
-
+from heapq import *
+n, m, k = map(int, input().split())
+typ = [sum(map(lambda x: 1 << (x - 1), map(int, input().split()[1:]))) for _ in range(n)]
+graph = [[] for i in range(n)]
 for i in range(m):
-    u, v, w = map(int, raw_input().split())
-    graph[u].append((v, w))
-    graph[v].append((u, w))
-
-queue = [(0, 1, masks[1])]
-
-# Djikstra
-while queue:
-    cost, node, mask = heappop(queue)
-    for X in graph[node]:
-        v, c = X
-        if cost + c < dp[v][mask|masks[v]]:
-            heappush(queue, (cost+c, v, mask | masks[v]))
-            dp[v][mask | masks[v]] = cost + c
-
-ans = float('inf')
-
-# Brute force bit manipulation
-for i in xrange(2**k):
-    for j in xrange(2**k):
-        if i | j == 2**k - 1 and dp[n][j] != float('inf'):
-            ans = min(ans, max(dp[n][i], dp[n][j]))
-
-print ans
+    a, b, c = map(int, input().split())
+    a, b = a - 1, b - 1
+    graph[a].append((b, c))
+    graph[b].append((a, c))
+k, n = (1 << k) - 1, n - 1
+h = [[] for _ in range(k + 1)]
+v = [set() for _ in range(k + 1)]
+last = {0: 0}
+heappush(h[typ[0]], (0, 0))
+flag = INF = 10 ** 9
+for i in range(k + 1):
+    while h[i]:
+        c, a = heappop(h[i])
+        if a == n:
+            for x, y in last.items():
+                if i | x == k:
+                    flag = min(flag, max(y, c))
+            last[i] = min(c, last.get(i, INF))
+        if a in v[i]:
+            continue
+        v[i].add(a)
+        for x, y in graph[a]:
+            j = typ[x] | i
+            if x not in v[j]:
+                heappush(h[j], (y + c, x))
+print(flag)
