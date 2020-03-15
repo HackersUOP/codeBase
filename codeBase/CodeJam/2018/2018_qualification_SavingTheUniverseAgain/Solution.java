@@ -1,4 +1,7 @@
-
+/* 
+	Code written by gihanjayatilaka[at]eng.pdn.ac.lk during Code Jam 2018
+	This solution passed all test cases
+*/
 import java.util.*;
 import java.io.*;
 
