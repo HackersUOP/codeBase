@@ -1,3 +1,5 @@
+# Problem setter's code
+# Author : harshana.w@eng.pdn.ac.lk
 def f(X,Y,M,_x,_y):
     ret = 0
     for i in range(len(X)):
