@@ -1,3 +1,9 @@
+'''
+    Dinindu Udana
+    dtdinidu7@gmail.com
+    22/03/2020
+'''
+
 n = int(input())
 import heapq
 import math
