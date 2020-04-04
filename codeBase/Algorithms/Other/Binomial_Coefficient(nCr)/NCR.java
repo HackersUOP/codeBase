@@ -1,5 +1,5 @@
 /*
-    gihanjayatilaka[at]end[dot]pdn[dot]ac[dot]lk
+    gihanjayatilaka[at]eng[dot]pdn[dot]ac[dot]lk
     2020-04-04
 
     DP (Dynamic progamming) nCr (number of k-combinations)
