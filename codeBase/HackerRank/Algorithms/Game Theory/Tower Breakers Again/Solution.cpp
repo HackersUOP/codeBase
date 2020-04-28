@@ -1,3 +1,7 @@
+/*
+        Copyright (C) 2020, Sathira Silva.
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
