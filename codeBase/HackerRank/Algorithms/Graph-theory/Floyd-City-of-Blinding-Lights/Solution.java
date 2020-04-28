@@ -5,7 +5,7 @@
     This submission passed all test cases
 */
 import java.util.Scanner;
-public class HackerRank_Floyd {
+public class Solution {
 	static Scanner sc=new Scanner(System.in);
 	
 	public static void main(String[] args){
