@@ -159,21 +159,21 @@ class Tree:
 
 
 T = int(stdin.readline())
-for _0 in range(T):
+for _ in range(T):
     P = int(stdin.readline())
-    t = Tree()
-    g = Graph()
-    for _1 in range(P):
+    tree = Tree()
+    graph = Graph()
+    for __ in range(P):
         x, y = list(map(int, stdin.readline().split()))
-        g.add(x, y)
+        graph.add(x, y)
     # Preprocessing
-    g.bfs(t)
+    graph.bfs(tree)
     queries = int(stdin.readline())
-    for _2 in range(queries):
+    for ___ in range(queries):
         query = list(map(int, stdin.readline().split()))
         if query[0] == 0:
-            t.add(query[2], query[1])
+            tree.add(query[2], query[1])
         if query[0] == 1:
-            t.delete(query[1])
+            tree.delete(query[1])
         if query[0] == 2:
-            stdout.write(str(t.find(query[1], query[2])) + '\n')
+            stdout.write(str(tree.find(query[1], query[2])) + '\n')
