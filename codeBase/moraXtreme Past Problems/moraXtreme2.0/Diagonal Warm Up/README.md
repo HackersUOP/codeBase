@@ -29,6 +29,6 @@ You are given a square matrix of integers. Sum up the numbers on the diagonals a
 ```
 
 **Explanation 0**
-```
-$`4 + 5 + 7 + 3 + 6 = 25`$
+```math
+4 + 5 + 7 + 3 + 6 = 25
 ```
