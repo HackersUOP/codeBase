@@ -9,8 +9,8 @@ You are given a square matrix of integers. Sum up the numbers on the diagonals a
 
 **Constraints**
 
-$`2 \leq N \leq 300`$
-* $`1 \leq a_{ij} \leq 10^{8}`$
+* <img src="https://render.githubusercontent.com/render/math?math=2 \leq N \leq 300">
+* <img src="https://render.githubusercontent.com/render/math?math=1 \leq a_{ij} \leq 10^{8}">
 
 **Output Format**
 
