@@ -9,8 +9,8 @@ You are given a square matrix of integers. Sum up the numbers on the diagonals a
 
 **Constraints**
 
-* $2 \leq N \leq 300$
-* 1 \leq a_{ij} \leq 10^{8}
+* $`2 \leq N \leq 300`$
+* $`1 \leq a_{ij} \leq 10^{8}`$
 
 **Output Format**
 
@@ -30,5 +30,5 @@ You are given a square matrix of integers. Sum up the numbers on the diagonals a
 
 **Explanation 0**
 ```
-$4 + 5 + 7 + 3 + 6 = 25$
+$`4 + 5 + 7 + 3 + 6 = 25`$
 ```
