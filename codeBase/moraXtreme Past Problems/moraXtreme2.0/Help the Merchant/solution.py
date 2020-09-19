@@ -1,3 +1,5 @@
+# Problem: https://www.hackerrank.com/contests/moraxtreme-2/challenges/money-money-money
+
 from sys import stdin, stdout
 
 INF = 1e9
