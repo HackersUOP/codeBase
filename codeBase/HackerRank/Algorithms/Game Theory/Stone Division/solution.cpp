@@ -5,8 +5,8 @@
   
   Approach:
     (1). Identify the winning / losing states of the game:
-        If there doesn't exist a number s in the in the set S such that s divides n, it is a loosing state. Otherwise, the game divides into n / s equivalent games (because a 
-        single pile splits into n / s equal piles). So, the grundy number of the total game is the nim-sum (XOR sum) of those equivalent games. Thus, if there exists such s
+        If there doesn't exist a number s in the in the set S such that s divides n, it is a loosing state. Otherwise, the game divides into s equivalent games (because a 
+        single pile splits into s equal piles of size n / s). So, the grundy number of the total game is the nim-sum (XOR sum) of those equivalent games. Thus, if there exists such s
         and n / s is even (i.e. n is even), after the split the nim-sum will be 0 (Hence, it's a winning state). Otherwise, g(n / s) where g is the grundy function for the game.
         Therefore, if n is odd, after a split we can think of the game as a single pile of size n / s. If the n / s state is a losing state (i.e g(n / s) = 0), n is a winning
         state.
