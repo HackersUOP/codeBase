@@ -12,7 +12,7 @@
         state.
     (2). Compute grundy numbers:
         Clearly, the grundy number of a state n (a pile of size n) is g(n) = 0 if there is no number in set S that divides n. Otherwise, an expression can be formulated as
-        winning(n) = (n % 2 == 0) or winning(n / s). Therefore, when there exists an s in S such that s | n we have to use dynamic programming with memoization to compute 
+        winning(n) = (n % 2 == 0) or NOT winning(n / s). Therefore, when there exists an s in S such that s | n we have to use dynamic programming with memoization to compute 
         the result since the expression for winning(n) is recursive.
         
         (In conclusion, we didn't have to compute the grundy numbers actually. We only checked whether the grundy number of the state after a split is 0 or not)
