@@ -5,14 +5,14 @@
   
   Approach:
     (1). Identify the winning / losing states of the game:
-        If there doesn't exist a number s in the in the set S such that s divides n, it is a loosing state. Otherwise, the game divides into n / s equivalent games (because a 
-        single pile splits into n / s equal piles). So, the grundy number of the total game is the nim-sum (XOR sum) of those equivalent games. Thus, if there exists such s
+        If there doesn't exist a number s in the in the set S such that s divides n, it is a loosing state. Otherwise, the game divides into s equivalent games (because a 
+        single pile splits into s equal piles of size n / s). So, the grundy number of the total game is the nim-sum (XOR sum) of those equivalent games. Thus, if there exists such s
         and n / s is even (i.e. n is even), after the split the nim-sum will be 0 (Hence, it's a winning state). Otherwise, g(n / s) where g is the grundy function for the game.
         Therefore, if n is odd, after a split we can think of the game as a single pile of size n / s. If the n / s state is a losing state (i.e g(n / s) = 0), n is a winning
         state.
     (2). Compute grundy numbers:
         Clearly, the grundy number of a state n (a pile of size n) is g(n) = 0 if there is no number in set S that divides n. Otherwise, an expression can be formulated as
-        winning(n) = (n % 2 == 0) or winning(n / s). Therefore, when there exists an s in S such that s | n we have to use dynamic programming with memoization to compute 
+        winning(n) = (n % 2 == 0) or NOT winning(n / s). Therefore, when there exists an s in S such that s | n we have to use dynamic programming with memoization to compute 
         the result since the expression for winning(n) is recursive.
         
         (In conclusion, we didn't have to compute the grundy numbers actually. We only checked whether the grundy number of the state after a split is 0 or not)
