@@ -19,6 +19,8 @@
             coordinate of Q reach n. Therefore, to find the number of triangles we have to find how many integer steps we can come down along the vector PQ starting from P
             until we reach y = 0 or x = n. Let dx and dy be the lengths of corresponding x and y integer steps: dx = y / gcd(x, y), dy = x / gcd(x, y)
             Therefore, the number of triangles is the minimum of (n - x) / dx and y / dy
+            
+  (This's the 91st problem in Project Euler)
 */
 
 #include <bits/stdc++.h>
