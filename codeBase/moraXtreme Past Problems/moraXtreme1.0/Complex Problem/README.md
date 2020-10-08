@@ -8,7 +8,8 @@ Now plug them into the expression:
 <img src="https://latex.codecogs.com/gif.latex?p=x^{n}&plus;\frac{1}{x^{n}}&plus;y^{n}&plus;\frac{1}{y^{n}}">
 <img src="https://latex.codecogs.com/gif.latex?p=\left&space;(&space;e^{i\frac{\pi}{3}}&space;\right&space;)^{n}&plus;\left&space;(\frac{1}{e^{i\frac{\pi}{3}}}&space;\right&space;)^{n}&plus;\left&space;(&space;e^{-i\frac{\pi}{3}}&space;\right&space;)^{n}&plus;\left&space;(\frac{1}{e^{-i\frac{\pi}{3}}}&space;\right&space;)^{n}">
 <img src="https://latex.codecogs.com/gif.latex?p=2(e^{i\frac{n\pi}{3}}&plus;e^{-i\frac{n\pi}{3}})">
-<img src="">
+<img src="https://latex.codecogs.com/gif.latex?p=2\left&space;(&space;cos\left&space;(n\frac{pi}{3}&space;\right&space;)&space;&plus;isin\left&space;(n\frac{pi}{3}&space;\right&space;)&plus;cos\left&space;(n\frac{pi}{3}&space;\right&space;)&space;-isin\left&space;(n\frac{pi}{3}&space;\right&space;)\right&space;)">
+<img src="https://latex.codecogs.com/gif.latex?\therefore&space;p=4cos\left&space;(&space;n\frac{pi}{3}&space;\right&space;)">
 
 # Problem Statement:
 
