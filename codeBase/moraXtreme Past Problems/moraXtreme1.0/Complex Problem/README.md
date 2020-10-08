@@ -1,4 +1,4 @@
-<img src="https://render.githubusercontent.com/render/math?math=\[a^{2}-a+1=1\]">
+<img src="https://render.githubusercontent.com/render/math?math=a^{2}-a\+1=1">
 <img src="https://render.githubusercontent.com/render/math?math=\left (a-\frac{1}{2}\right )^{2}-\left ( i\frac{\sqrt{3}}{2} \right )^{2}=0">
 
 
