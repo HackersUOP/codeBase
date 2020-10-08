@@ -1,7 +1,7 @@
 # Evaluation of p:
 
 <img src="https://latex.codecogs.com/gif.latex?a^{2}-a&plus;1=1">
-<img src="https://render.githubusercontent.com/render/math?math=\left (a-\frac{1}{2}\right )^{2}-\left ( i\frac{\sqrt{3}}{2} \right )^{2}=0">
+<img src="https://latex.codecogs.com/gif.latex?\left&space;(a-\frac{1}{2}\right&space;)^{2}-\left&space;(&space;i\frac{\sqrt{3}}{2}&space;\right&space;)^{2}=0">
 
 # Problem Statement:
 
