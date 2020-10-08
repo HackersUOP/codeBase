@@ -6,7 +6,7 @@
   Approach: In simple terms the problem asks to find the maximum length subsequence of the indices of the array, when sorted, either all of the indices in the subsequence are
             strictly increasing or first decreasing then increasing (reverse bitonic). Because, the lower indices belong to the tiles which are firstly plastered onto the floor
             and the higher indices are the ones which are plastered later. Therefore, when sorted by the magnitude of the shade, always the indices increase right to left or 
-            increase right to left starting from 0 and increase left to right starting from 0. So the goal is to find the longest length of the subsequence.
+            increase right to left ending at 0 and increase left to right starting from 0. So the goal is to find the longest length of the subsequence.
 */
 
 #include <bits/stdc++.h>
