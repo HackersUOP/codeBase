@@ -2,6 +2,8 @@
 
 <img src="https://latex.codecogs.com/gif.latex?a^{2}-a&plus;1=1">
 <img src="https://latex.codecogs.com/gif.latex?\left&space;(a-\frac{1}{2}\right&space;)^{2}-\left&space;(&space;i\frac{\sqrt{3}}{2}&space;\right&space;)^{2}=0">
+<img src="https://latex.codecogs.com/gif.latex?a=\frac{1}{2}\pm&space;i\frac{\sqrt{3}}{2}\Rightarrow&space;a=e^{\pm&space;\frac{i\pi}{3}}">
+<img src="https://latex.codecogs.com/gif.latex?\therefore">Let <img src="x=e^{i\frac{\pi}{3}}">
 
 # Problem Statement:
 
