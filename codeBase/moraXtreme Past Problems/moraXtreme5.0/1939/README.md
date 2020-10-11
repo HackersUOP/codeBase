@@ -1,1 +1,1 @@
-![problem](problem)
+![problem](problem.jpg)
