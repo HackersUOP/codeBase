@@ -4,9 +4,9 @@
     Link to the problem: https://www.hackerrank.com/contests/moraxtreme-5-0/challenges/1939
     
     Apporach: If voco is a leaf vertex (number of adjacent vertices = 1) it can be captured by the first player immediately thus, Stalind wins. Otherwise, they both have to
-              capture the other vertices before they capture the city voco. Therefore, start a BFS / DFS from the city voco and count the number of grandchildern of voco.
-              Since the requirement to capture a city is at most having one grandchild, if (#grandchildren - 1) is even, always the first player wins and if it is odd, the
-              second player wins.
+              capture the other vertices alternatively before they capture the city voco. Therefore, start a BFS / DFS from the city voco and count the number of grandchildern 
+              of voco. Since the requirement to capture a city is at most having one grandchild, if (#grandchildren - 1) is even, always the first player wins and if it is odd, 
+              the second player wins.
               
     Time Complexity: O(n) since the graph is a tree
 */
